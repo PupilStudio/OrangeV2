@@ -1,8 +1,13 @@
 # OrangeV2
-在Windows环境下的本地安全评测机
 
-由于其它原因而咕咕。欢迎有兴趣的同志前来填坑。
+在Windows环境下的本地安全评测机。目前在咕，NOIP 搞完可能更新。
 
-基于DLL注入与API拦截的安全评测技术，阻止选手进行访问答案文件、执行应用程序等危险行为。
+需要重构。
 
-本项目处于半弃坑状态。
+预计的项目架构：
+
+- OrangeV2.Sandbox 基于 DLL 注入与 API 拦截的评测沙箱。
+- OrangeV2.JudgerInterface 判题系统与 SPJ 接口。
+- OrangeV2.Interface 基于 WebAPI 的评测终端。
+- OrangeV2.Client 管理客户端。
+- OrangeV2.Web 网页交题系统，~~NOIP赛制~~。
